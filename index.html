@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora de OS</title>
+</head>
+<body>
+  <div class="tudo">
+    <h1>Calculadora de OS</h1>
+    <form id="osForm">
+      <div class="campo">
+        <label for="proposta">PROPOSTA:</label>
+        <input type="number" id="proposta" step="0.01" placeholder="Valor da Proposta" required>
+      </div>
+      <div class="campo">
+        <label for="recibo">RECIBO:</label>
+        <input type="number" id="recibo" step="0.01" placeholder="Valor do Recibo" required>
+      </div>
+      <div class="campo">
+        <label for="osb">OS B:</label>
+        <input type="number" id="osb" step="0.01" placeholder="Valor OS B" required>
+      </div>
+      <div class="campo">
+        <label for="agio">ÁGIO (%):</label>
+        <input type="number" id="agio" step="0.01" placeholder="Valor do Ágio em %" required>
+      </div>
+      <div class="campo">
+        <label for="imposto">IMPOSTO (%):</label>
+        <input type="number" id="imposto" step="0.01" placeholder="Valor do Imposto em %" required>
+      </div>
+      <button id="btn" type="submit">Calcular OS</button>
+      <button id="limpar" type="button">Limpar Campos</button>
+    </form>
+    <div id="resultado"></div>
+  </div>
+  <script src="funcao.js"></script>
+</body>
+</html>
