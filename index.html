@@ -10,6 +10,16 @@
 <body>
   <div class="tudo">
     <h1>Calculadora de OS</h1>
+
+    <!-- Select obrigatório -->
+    <div class="campo">
+      <label for="reciboSelect">Escolha a opção do cliente:</label>
+      <select id="reciboSelect" required>
+        <option value="nao" selected>Cliente não exige recibo</option>
+        <option value="sim">Cliente exige recibo</option>
+      </select>
+    </div>
+
     <form id="osForm">
       <div class="campo">
         <label for="proposta">PROPOSTA:</label>
